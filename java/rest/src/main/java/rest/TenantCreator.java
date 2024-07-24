@@ -1,4 +1,4 @@
-package hello;
+package rest;
 
 import org.joda.time.LocalTime;
 import reactor.core.publisher.Mono;
@@ -9,7 +9,7 @@ import org.permify.api.TenancyApi;
 import org.permify.model.TenantCreateRequest;
 import org.permify.model.TenantCreateResponse;
 
-public class HelloWorld {
+public class TenantCreator {
   public static void main(String[] args) {
     String baseUrl = "http://localhost:3476"; // Ensure this is the correct port
     String bearerToken = "secret";  // Replace with your actual bearer token
