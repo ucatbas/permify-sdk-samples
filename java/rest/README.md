@@ -1,6 +1,6 @@
 # Permify Java SDK
 
-This repository contains a sample usage for the Java SDK for Permify.
+This repository contains a sample usage for the Java REST SDK for Permify.
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ To get started, clone the repository using the following command:
 
 ```sh
 git clone https://github.com/ucatbas/permify-sdk-samples.git
-cd permify-sdk-samples/java
+cd permify-sdk-samples/java/rest
 ```
 
 ### Building the Project
