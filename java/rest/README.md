@@ -27,7 +27,7 @@ Navigate to the root directory of the project and run the following commands to 
 mvn clean install
 ```
 
-### Running the Application
+### Running the Application
 
 After successfully building the project, you can run the application using the following command:
 
@@ -37,7 +37,7 @@ java -jar target/your-artifact-name-0.0.1.jar
 
 Replace your-artifact-name-0.0.1.jar with the actual name of the jar file generated after the build.
 
-## For your own Projects
+## For your own Projects
 
 To use the Permify SDK in your project, add the following dependency to your pom.xml file:
 
