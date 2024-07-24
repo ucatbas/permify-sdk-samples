@@ -5,7 +5,6 @@ from datetime import datetime
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:3476
-# See configuration.py for a list of all supported configuration parameters.
 configuration = permify.Configuration(
     host = "http://localhost:3476"
 )
