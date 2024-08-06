@@ -23,7 +23,7 @@ cd permify-sdk-samples/typescript/grpc
 Install permify:
 ```sh
 npm config set @buf:registry https://buf.build/gen/npm/v1/
-npm install @buf/permifyco_permify.grpc_web@latest
+npm install @permify/permify-node
 ```
 
 ### Running the Application
@@ -48,8 +48,10 @@ ts-node create_tenant.ts
 Here is a simple permify client:
 
 ```typescript
-import * as service_grpc from '@buf/permifyco_permify.grpc_node/base/v1/service_grpc_pb';
-import { ChannelCredentials } from "@grpc/grpc-js";
+import * as permify from "@permify/permify-node";
 
-const tenancyClient = new service_grpc.TenancyClient("127.0.0.1:3478", ChannelCredentials.createInsecure());
+const client = permify.grpc.newClient({
+    endpoint: "localhost:3478",
+    cert: undefined
+});
 ```
